@@ -25,8 +25,8 @@
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid justify-content-start">
                     <!-- Logo -->
-                    <a class="navbar-brand"><img class="logo-small d-md-none" src="img/mobile-logo.png" alt="logo"></a>
-                    <a class="navbar-brand"><img class="d-none d-md-block" src="img/logo.svg" alt="logo"></a>
+                    <a class="navbar-brand"><img class="logo-small d-lg-none" src="img/mobile-logo.png" alt="logo"></a>
+                    <a class="navbar-brand"><img class="d-none d-lg-block" src="img/logo.svg" alt="logo"></a>
                     <!-- Barra di ricerca -->
                     <form class="d-flex flex-grow-1" role="search">
                         <span class="input-group-text border border-end-0 rounded-end-0 ricerca-ms" id="basic-addon1"><button class="bottone-ricerca"><i class="fa-solid fa-magnifying-glass text-black"></i></button></i></span>
@@ -57,6 +57,7 @@
         <section class="sezione-sottostante">
             <!-- INIZIO NAV -->
             <nav class="nav-ms py-3 d-flex flex-column justify-content-between barra-laterale">
+                <!-- Sezione superiore nav -->
                 <section>
                     <ul class="d-flex flex-column py-3">
                         <li>
@@ -79,6 +80,7 @@
                         </li>
                     </ul>
                 </section>
+                <!-- Sezione inferiore nav -->
                 <section>
                     <button class="d-block m-auto">
                         <span><i class="fa-solid fa-gear"></i></span>
@@ -89,8 +91,51 @@
             <!-- FINE NAV -->
 
             <!-- INIZIO MAIN -->
-            <main class="main-ms">
-                
+            <main class="main-ms px-2">
+                <section class="riquadri">
+                    <div class="card">
+                        <div class="card-header">
+                          <h1>PROSSIME CLASSI</h1>
+                        </div>
+                        <!-- Tabella -->
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="cella-larga">First</th>
+                                <th scope="col" class="d-none d-lg-table-cell">Last</th>
+                                <th scope="col" class="d-none d-lg-table-cell">Handle</th>
+                                <th scope="col">Hello</th>
+                                <th scope="col">World</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td class="d-none d-lg-table-cell">Otto</td>
+                                <td class="d-none d-lg-table-cell">@mdo</td>
+                                <td>hello</td>
+                                <td>world</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td class="d-none d-lg-table-cell">Thornton</td>
+                                <td class="d-none d-lg-table-cell">@fat</td>
+                                <td>hello</td>
+                                <td>world</td>
+                            </tr>
+                            <tr>
+                                <td>Larry</td>
+                                <td class="d-none d-lg-table-cell">the Bird</td>
+                                <td class="d-none d-lg-table-cell">@twitter</td>
+                                <td>hello</td>
+                                <td>world</td>
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                        <!-- Fine tabella -->
+                    </div>
+                </section>    
             </main>
             <!-- FINE MAIN -->
         </section>
