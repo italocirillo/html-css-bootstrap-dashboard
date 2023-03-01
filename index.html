@@ -29,11 +29,11 @@
                     <a class="navbar-brand"><img class="d-none d-md-block" src="img/logo.svg" alt="logo"></a>
                     <!-- Barra di ricerca -->
                     <form class="d-flex flex-grow-1" role="search">
-                        <span class="input-group-text border border-end-0 rounded-end-0 ricerca-ms" id="basic-addon1"><button class="bottone-ricerca"><i class="fa-solid fa-magnifying-glass"></i></button></i></span>
+                        <span class="input-group-text border border-end-0 rounded-end-0 ricerca-ms" id="basic-addon1"><button class="bottone-ricerca"><i class="fa-solid fa-magnifying-glass text-black"></i></button></i></span>
                         <input class="form-control me-2 border border-start-0 rounded-start-0 ricerca-ms" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                     </form>
                     <!-- Menu a tendina -->
-                    <ul class="d-none d-lg-flex">
+                    <ul class="d-none d-lg-flex header-menu ms-1">
                         <li><span><i class="icona-header fa-solid fa-ellipsis-vertical"></i></span></li>
                         <li><span><i class="icona-cerchiata fa-solid fa-question"></i></span></li>
                         <li><span><i class="icona-header fa-solid fa-list"></i></span></li>
@@ -56,8 +56,35 @@
         <!-- Sezione sottostante -->
         <section class="sezione-sottostante">
             <!-- INIZIO NAV -->
-            <nav class="nav-ms">
-
+            <nav class="nav-ms py-3 d-flex flex-column justify-content-between barra-laterale">
+                <section>
+                    <ul class="d-flex flex-column py-3">
+                        <li>
+                            <button class="d-block m-auto">
+                                <span><i class="fa-solid fa-house"></i></span>
+                                <span class="px-2 d-none d-lg-inline">Home</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="d-block m-auto">
+                                <span><i class="fa-solid fa-chart-simple"></i></span>
+                                <span class="px-2 d-none d-lg-inline">Stats</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="d-block m-auto">
+                                <span><i class="fa-solid fa-signal"></i></span>
+                                <span class="px-2 d-none d-lg-inline">Signal</span>
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <button class="d-block m-auto">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                        <span class="px-2 d-none d-lg-inline">Admin</span>
+                    </button>
+                </section>
             </nav>
             <!-- FINE NAV -->
 
