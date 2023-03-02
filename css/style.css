@@ -54,7 +54,8 @@ ul{
 
 /* TIPOGRAFIA */
 h1{
-    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0;
 }
 th{
     color: gray;
@@ -63,6 +64,7 @@ th{
 h2{
     font-size: 1.5rem;
 }
+
 
 /* HEADER */
 .header-ms{
@@ -124,7 +126,6 @@ h2{
     flex-grow: 1;
     overflow-y: auto;
 }
-
 /* BARRA LATERALE NAV */
 .nav-ms{
     width: 50px;
@@ -143,7 +144,33 @@ h2{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+
 /* MAIN */
+/* HEADER MAIN */
+.header-main-ms{
+    background-color: #1B72E8;
+}
+.bottone-header-main{
+    color: white;
+    background-color: #165BBA;
+    border-style: none;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    padding: 0.3em 0.5em;
+}
+.bottone-header-main:hover{
+    background-color: #0c346c;
+}
+.virgolette{
+    font-size: 1.7rem;
+    font-weight: 200;
+    padding: 0;
+    vertical-align: sub;
+    color: white;
+}
+
+
+/* RIQUADRI */
 .main-ms{
     width: calc(100% - 50px);
     height: 100%;
@@ -190,6 +217,7 @@ h2{
     color: white;
 }
 
+
 /* MEDIA QUERY */
 @media screen and (min-width:992px){
     .nav-ms{
@@ -199,7 +227,6 @@ h2{
         width: calc(100% - 150px);
     }
 }
-
 
 /* SUPERBONUS */
 @media screen and (min-width:768px){
