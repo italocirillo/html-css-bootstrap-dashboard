@@ -51,6 +51,7 @@ ul{
     cursor: pointer;
 }
 
+
 /* TIPOGRAFIA */
 h1{
     font-size: 1.5rem;
@@ -137,7 +138,6 @@ th{
     width: calc(100% - 50px);
     height: 100%;
     overflow-y: auto;
-    padding-top: 2em;
 }
 /* Tabella */
 .cella-larga{
