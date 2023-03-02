@@ -18,6 +18,8 @@ ul{
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .dropdown-menu[data-bs-popper] {
     position: absolute;
@@ -39,7 +41,15 @@ ul{
 .riquadri .card{
     width: 100%;
 }
-
+.bottone{
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.2em 0.8em;
+    border-radius: 6px;
+}
+.bottone:hover{
+    cursor: pointer;
+}
 
 /* TIPOGRAFIA */
 h1{
@@ -52,10 +62,8 @@ th{
 
 /* HEADER */
 .header-ms{
-    height: 50px;
     width: 100%;
     background-color: #fefefe;
-    position: sticky;
     top: 0;
     left: 0;
     line-height: 50px;
@@ -98,11 +106,12 @@ th{
 
 /* SEZIONE SOTTOSTANTE */
 .sezione-sottostante{
-    height: calc(100vh - 50px);
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* BARRA LATERALE NAV */
@@ -113,7 +122,6 @@ th{
     color: white;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
-
 }
 .barra-laterale button{
     background-color: transparent;
@@ -134,6 +142,42 @@ th{
 /* Tabella */
 .cella-larga{
     width: 50%;
+}
+.avatar-classe{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.2em;
+}
+.bottone-verde{
+    background-color: #198754;
+}
+.bottone-verde:hover{
+    background-color: #256332;
+}
+.bottone-giallo{
+    background-color: #FFC107;
+}
+.bottone-giallo:hover{
+    background-color: #bd8e00;
+}
+.bottone-rosso{
+    background-color: #DC3545;
+}
+.bottone-rosso:hover{
+    background-color: #a00414;
+}
+.icone-tabella{
+    color: #6C757D;
+    border: 1px solid #6C757D;
+    font-size: 0.8rem;
+    padding: 0.4em 0.5em;
+    border-radius: 3px;
+}
+.icone-tabella:hover{
+    cursor: pointer;
+    background-color: #6C757D;
+    color: white;
 }
 
 /* MEDIA QUERY */
