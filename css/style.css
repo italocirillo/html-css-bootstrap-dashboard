@@ -60,6 +60,9 @@ th{
     color: gray;
     font-size: 0.8rem;
 }
+h2{
+    font-size: 1.5rem;
+}
 
 /* HEADER */
 .header-ms{
@@ -100,8 +103,15 @@ th{
 .campanella{
     color: #FF8F00;
 }
-.icona-header{
-    color: #5B5858;
+.campanella:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+}
+.icona-header:hover{
+    transform: scale(1.2);
+}
+.icona-cerchiata:hover{
+    transform: scale(1.2);
 }
 
 
@@ -187,5 +197,18 @@ th{
     }
     .main-ms{
         width: calc(100% - 150px);
+    }
+}
+
+
+/* SUPERBONUS */
+@media screen and (min-width:768px){
+    .modal-dialog{
+        margin-right: 0;
+        margin-top: 0;
+        height: 100vh;
+    }
+    .modal-content{
+        height: 100%;
     }
 }
