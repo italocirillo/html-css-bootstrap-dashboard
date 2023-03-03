@@ -96,13 +96,106 @@
                     <div class="container">
                         <div class="row py-3">
                             <!-- Prima colonna -->
-                            <div class="col-12 col-md-4 col-lg-2 order-md-3">
+                            <div class="col-12 col-md-4 col-lg-3 order-md-3 py-3">
                                 <div>
                                     <span class="text-white fs-5">Nuovo Studente</span>
+
+                                    <!-- BOTTONE FORM SUPERBONUS -->
+                                    <span>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary bottone-form-ms" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-fullscreen-md-down">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-bottom-0">
+                                                <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Inserisci un nuovo studente</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body overflow-y-auto">
+                                                    <form class="row g-3">
+                                                        <div class="col-6">
+                                                            <label for="inputName" class="form-label">Nome</label>
+                                                            <input type="text" class="form-control" id="inputName">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="inputSurname" class="form-label">Cognome</label>
+                                                            <input type="text" class="form-control" id="inputSurname">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <div class="input-group flex-nowrap">
+                                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                                <input type="email" class="form-control" label="inputEmail4" aria-describedby="addon-wrapping">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                          <label for="inputPassword4" class="form-label">Password</label>
+                                                          <input type="password" class="form-control" id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="inputEmail5" class="form-label">Indirizzo Email</label>
+                                                            <div class="input-group flex-nowrap">
+                                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                                <input type="email" class="form-control" label="inputEmail5" aria-describedby="addon-wrapping">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                          <label for="inputPassword4" class="form-label">Password</label>
+                                                          <input type="password" class="form-control" id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-12">
+                                                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                          <input type="text" class="form-control" id="inputAddress">
+                                                        </div>
+                                                        <div class="col-6">
+                                                          <label for="inputCity" class="form-label">Città</label>
+                                                          <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="col-4">
+                                                          <label for="inputState" class="form-label">Stato</label>
+                                                          <select id="inputState" class="form-select">
+                                                            <option selected>Scegli...</option>
+                                                            <option>Italia</option>
+                                                            <option>America</option>
+                                                          </select>
+                                                        </div>
+                                                        <div class="col-2">
+                                                          <label for="inputZip" class="form-label">CAP</label>
+                                                          <input type="text" class="form-control" id="inputZip">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="formFile" class="form-label">Foto</label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                        </div>
+                                                        <div class="col-12">
+                                                          <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                              Seleziona per proseguire
+                                                            </label>
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                          <button type="submit" class="btn btn-primary">Salva</button>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <button type="submit" class="btn btn-warning">Svuota</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <!-- FINE BOTTONE FORM SUPERBONUS -->
+                                    
                                 </div>
                             </div>
                             <!-- Seconda colonna -->
-                            <div class="col-12 col-md-4 col-lg-6 order-md-1">
+                            <div class="col-12 col-md-4 col-lg-6 order-md-1 py-3">
                                 <div class="d-flex align-items-center">
                                     <h1 class="d-inline">Boolean</h1>
                                     <span><button class="bottone-header-main ms-1">Piano blaze</button></span>
@@ -118,7 +211,7 @@
                                 </div>  
                             </div>
                             <!-- Terza colonna -->
-                            <div class="col-12 col-md-4 col-lg-4 order-md-2">
+                            <div class="col-12 col-md-4 col-lg-3 order-md-2 py-3">
                                 <p class="text-white fs-5">Studenti online negli ultimi 30 minuti</p>
                                 <p class="text-white fs-3">125</p>
                             </div>
@@ -126,48 +219,6 @@
                     </div>
                 </section>
                 <!-- FINE HEADER MAIN -->
-
-
-                <!-- BOTTONE FORM SUPER BONUS -->
-                <!-- Button trigger modal -->
-                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
-                </button> -->
-  
-                <!-- Modal -->
-                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen-md-down">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                    </div>
-                </div> -->
-                <!-- BOTTONE FORM SUPER BONUS -->
 
                 <!-- SEZIONE RIQUADRI -->
                 <section class="riquadri py-3">

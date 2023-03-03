@@ -126,6 +126,8 @@ h2{
     flex-grow: 1;
     overflow-y: auto;
 }
+
+
 /* BARRA LATERALE NAV */
 .nav-ms{
     width: 50px;
@@ -228,7 +230,11 @@ h2{
     }
 }
 
+
 /* SUPERBONUS */
+.bottone-form-ms{
+    border: 1px solid white;
+}
 @media screen and (min-width:768px){
     .modal-dialog{
         margin-right: 0;
